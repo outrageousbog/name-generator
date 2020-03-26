@@ -1,0 +1,98 @@
+<div style="padding: 5px">
+  <mat-card-content>
+    <mat-divider></mat-divider>
+    <hr/>
+    <mat-radio-group style="margin: 3vh" aria-label="Køn">
+      <mat-radio-button value="1" (change)="boy=false; girl=true">Pige</mat-radio-button>
+      <mat-radio-button value="2" (change)="boy=true; girl=false">Dreng</mat-radio-button>
+    </mat-radio-group>
+    <hr>
+    <mat-checkbox style="margin: 3vh" (click)="handleFavoriteClick()">Blandt favoritter</mat-checkbox>
+    <hr/>
+      <button mat-fab color="primary" style="margin-left: 7vh"
+              (click)="generateName()">
+      <span class="material-icons">
+        play_arrow
+      </span>
+      </button>
+    <hr/>
+      <h4>{{chosenName}}</h4>
+  </mat-card-content>
+</div>
+
+
+<!--<div class="row d-flex justify-content-center">-->
+<!--    <div class="row">-->
+<!--      <h1>Navnegenerator</h1>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--      <p>By Storm</p>-->
+<!--    </div>-->
+<!--</div>-->
+<!--    <div class="row d-flex justify-content-center"-->
+<!--    style="margin-top: 3vh">-->
+<!--      <h4>Køn</h4>-->
+<!--    </div>-->
+<!--<div class="row d-flex justify-content-center">-->
+<!--  <div *ngIf="boy; then thenBoy else elseBoy" ></div>-->
+<!--  <div *ngIf="girl; then thenGirl else elseGirl" ></div>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash;<div class="row d-flex justify-content-center"&ndash;&gt;-->
+<!--&lt;!&ndash;     style="margin-top: 3vh">&ndash;&gt;-->
+<!--&lt;!&ndash;  <h4>Køn</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<div class="d-flex justify-content-center">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;    <h1 class="display-4">Navnegenerator</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;    <p class="lead">By Storm</p>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="d-flex justify-content-center">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div *ngIf="boy; then thenBoy else elseBoy"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;  <div *ngIf="girl; then thenGirl else elseGirl"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<div class="d-flex justify-content-center">-->
+<!--  <div *ngIf="girl ||boy"-->
+<!--       (click)="generateName()"-->
+<!--       type="button"-->
+<!--       class="btn btn-success btn-lg">-->
+<!--    Hit me-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div class="d-flex justify-content-center"-->
+<!--      style="margin: 10vh">-->
+<!--  <h3>{{chosenName}}</h3>-->
+<!--</div>-->
+
+<!--<ng-template #thenBoy>-->
+<!--  <button type="button"-->
+<!--          style="margin: 1vh"-->
+<!--          (click)="boy=false"-->
+<!--          class="btn btn-primary">Boy</button>-->
+<!--</ng-template>-->
+
+<!--<ng-template #elseBoy>-->
+<!--  <button type="button"-->
+<!--          style="margin: 1vh"-->
+<!--          (click)="boy=true; girl=false"-->
+<!--          class="btn btn-outline-primary">Boy</button>-->
+<!--</ng-template>-->
+
+<!--<ng-template #thenGirl>-->
+<!--  <button type="button"-->
+<!--          style="margin: 1vh"-->
+<!--          (click)="girl=false"-->
+<!--          class="btn btn-danger">Girl</button>-->
+<!--</ng-template>-->
+
+<!--<ng-template #elseGirl>-->
+<!--  <button type="button"-->
+<!--          style="margin: 1vh"-->
+<!--          (click)="girl=true; boy = false"-->
+<!--          class="btn btn-outline-danger">Girl</button>-->
+<!--</ng-template>-->
