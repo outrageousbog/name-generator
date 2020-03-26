@@ -9,14 +9,15 @@
     <hr>
     <mat-checkbox style="margin: 3vh" (click)="handleFavoriteClick()">Blandt favoritter</mat-checkbox>
     <hr/>
-      <button mat-fab color="primary" style="margin-left: 7vh"
-              (click)="generateName()">
+    <h4 style="min-height: 5vh">{{chosenName}}</h4>
+
+    <hr/>
+    <button mat-fab color="primary" style="margin-left: 7vh"
+            (click)="generateName()">
       <span class="material-icons">
         play_arrow
       </span>
-      </button>
-    <hr/>
-      <h4>{{chosenName}}</h4>
+    </button>
   </mat-card-content>
 </div>
 
